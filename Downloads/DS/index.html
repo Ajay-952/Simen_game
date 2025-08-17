@@ -1,0 +1,440 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajay Kumar - DevopsCloud Engineer</title>
+    <meta name="description" content="Full Stack Developer specializing in Frontend, Backend, Cloud, and DevOps. Building modern web applications with React, Node.js, AWS, and more.">
+    <meta name="author" content="Victory Ajay Kumar">
+    <meta name="keywords" content="Full Stack Developer, Frontend, Backend, React, Node.js, AWS, DevOps, Web Development">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://victoryajaykumar.com/">
+    <meta property="og:title" content="Victory Ajay Kumar - Full Stack Developer">
+    <meta property="og:description" content="Full Stack Developer specializing in Frontend, Backend, Cloud, and DevOps. Building modern web applications with React, Node.js, AWS, and more.">
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://victoryajaykumar.com/">
+    <meta property="twitter:title" content="Victory Ajay Kumar - Full Stack Developer">
+    <meta property="twitter:description" content="Full Stack Developer specializing in Frontend, Backend, Cloud, and DevOps. Building modern web applications with React, Node.js, AWS, and more.">
+    <meta property="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">AK</div>
+                <span class="logo-text">Portfolio</span>
+            </div>
+            
+            <div class="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            
+            <button class="cta-button" onclick="scrollToSection('contact')">
+                Let's Connect
+            </button>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="tech-lines"></div>
+        <div class="floating-code">
+            <div class="code-element" style="top: 20%; left: 10%;">&lt;developer /&gt;</div>
+            <div class="code-element" style="top: 40%; right: 20%;">function() {</div>
+            <div class="code-element" style="bottom: 40%; left: 20%;">console.log("Hello World");</div>
+            <div class="code-element" style="bottom: 20%; right: 10%;">}</div>
+        </div>
+        
+        <div class="hero-content">
+            <h1 class="hero-title">
+                Hi, I'm <span class="text-gradient">Ajay Kumar</span>
+            </h1>
+            <div class="hero-subtitle">
+                <span>Specialized in </span>
+                <span class="animated-text" id="animatedText">DevOps</span>
+            </div>
+            <p class="hero-description">
+                DevOps Cloud Engineer passionate about building scalable infrastructure and modern web solutions
+            </p>
+            <div class="hero-buttons">
+                <button class="btn-primary" onclick="scrollToSection('projects')">
+                    View My Projects
+                </button>
+                <button class="btn-secondary" onclick="window.open('/resume.pdf', '_blank')">
+                    Download Résumé
+                </button>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="arrow-down">↓</div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">About <span class="text-gradient">Me</span></h2>
+            
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="profile-wrapper">
+                        <!-- <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face" alt="Victory Ajay Kumar" class="profile-img"> -->
+                        <div class="glow-ring"></div>
+                    </div>
+                </div>
+                
+                <div class="about-text">
+                    <div class="glass-card">
+                        <h3 class="card-title">DevOps Cloud Engineer</h3>
+                        <p class="card-description">
+                            I'm a passionate full-stack developer with expertise in modern web technologies. 
+                            I specialize in creating responsive, user-friendly applications using HTML, CSS, 
+                            JavaScript, and React for the frontend, while leveraging Node.js for backend development. 
+                            My experience extends to cloud platforms like AWS and DevOps tools including Docker, 
+                            enabling me to build scalable, production-ready solutions. I'm committed to writing 
+                            clean, maintainable code and staying updated with the latest industry trends and best practices.
+                        </p>
+                    </div>
+                    
+                    <div class="glass-card">
+                        <h3 class="card-title">Tech Stack</h3>
+                        <div class="tech-grid" id="techGrid">
+                            <div class="tech-item" data-tooltip="HTML5">
+                                <span class="tech-icon">🌐</span>
+                                <span class="tech-name">HTML5</span>
+                            </div>
+                            <div class="tech-item" data-tooltip="CSS3">
+                                <span class="tech-icon">🎨</span>
+                                <span class="tech-name">CSS3</span>
+                            </div>
+                            <div class="tech-item" data-tooltip="JavaScript">
+                                <span class="tech-icon">☁️</span>
+                                <span class="tech-name">AWS</span>
+                            </div>
+                            <div class="tech-item" data-tooltip="React">
+                               <spam class="fa-solid fa-database"></spam>
+                                <span class="tech-name">SQL</span>
+                            </div>
+                            <div class="tech-item" data-tooltip="Node.js">
+                                <span class="tech-icon"></span>
+                                <span class="tech-name">Kubernetes</span>
+                            </div>
+                            <div class="tech-item" data-tooltip="AWS">
+                                <span class="tech-icon">☁️</span>
+                                <span class="tech-name">Terraform</span>
+                            </div>
+                            <div class="tech-item" data-tooltip="Docker">
+                                <span class="tech-icon">🐳</span>
+                                <span class="tech-name">Docker</span>
+                            </div>
+                            <div class="tech-item" data-tooltip="Git">
+                                <span class="tech-icon">🔧</span>
+                                <span class="tech-name">Git</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">Featured <span class="text-gradient">Projects</span></h2>
+            
+            <div class="project-showcase">
+                <div class="project-card" id="projectCard">
+                    <div class="card-inner">
+                        <!-- Front of card -->
+                        <div class="card-front">
+                            <div class="project-image">
+                                <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop" alt="E-Commerce Website">
+                                <div class="image-overlay"></div>
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">E-Commerce Website</h3>
+                                <p class="project-description">
+                                    A responsive shoe store built using HTML, CSS & JavaScript with modern design principles and user-friendly interface.
+                                </p>
+                                <div class="tech-tags">
+                                    <span class="tech-tag">HTML</span>
+                                    <span class="tech-tag">CSS</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                </div>
+                                <div class="project-buttons">
+                                    <button class="btn-outline" onclick="window.open('https://github.com/victory-ajay-kumar', '_blank')">
+                                        <span class="github-icon">📱</span> GitHub
+                                    </button>
+                                    <button class="btn-primary" onclick="window.open('https://victory-ecommerce-demo.netlify.app', '_blank')">
+                                        Live Demo
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Back of card -->
+                        <div class="card-back">
+                            <h3 class="project-title">Project Highlights</h3>
+                            <div class="highlights">
+                                <div class="highlight-item">
+                                    <div class="bullet"></div>
+                                    <span>100% Responsive</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <div class="bullet"></div>
+                                    <span>User-friendly UI</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <div class="bullet"></div>
+                                    <span>Modern Design</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <div class="bullet"></div>
+                                    <span>Fast Loading</span>
+                                </div>
+                            </div>
+                            <div class="back-buttons">
+                                <button class="btn-outline" onclick="window.open('https://github.com/victory-ajay-kumar', '_blank')">
+                                    <span class="github-icon">📱</span> Code
+                                </button>
+                                <button class="btn-primary" onclick="window.open('https://victory-ecommerce-demo.netlify.app', '_blank')">
+                                    Visit Site
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="projects-footer">
+                <p>Hover over the card to see project highlights</p>
+                <button class="btn-outline" onclick="window.open('https://github.com/victory-ajay-kumar', '_blank')">
+                    View All Projects on GitHub
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & <span class="text-gradient">Journey</span></h2>
+            
+            <div class="skills-content">
+                <div class="skills-chart">
+                    <div class="glass-card">
+                        <h3 class="card-title">Technical Skills</h3>
+                        <canvas id="skillsRadar" width="400" height="400"></canvas>
+                    </div>
+                </div>
+                
+                <div class="timeline">
+                    <div class="glass-card">
+                        <h3 class="card-title">Developer Journey</h3>
+                        <div class="timeline-container">
+                            <div class="timeline-line"></div>
+                            <div class="timeline-items">
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-content">
+                                        <div class="timeline-header">
+                                            <span class="timeline-year">2024</span>
+                                            <h4 class="timeline-title">Started Web Development Journey</h4>
+                                        </div>
+                                        <p class="timeline-description">Began learning HTML, CSS, and JavaScript fundamentals</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-content">
+                                        <div class="timeline-header">
+                                            <span class="timeline-year">2024</span>
+                                            <h4 class="timeline-title">Frontend Mastery</h4>
+                                        </div>
+                                        <p class="timeline-description">Mastered React.js and modern frontend development practices</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-content">
+                                        <div class="timeline-header">
+                                            <span class="timeline-year">2024</span>
+                                            <h4 class="timeline-title">Backend Development</h4>
+                                        </div>
+                                        <p class="timeline-description">Learned Node.js, Express, and database management</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-content">
+                                        <div class="timeline-header">
+                                            <span class="timeline-year">2024</span>
+                                            <h4 class="timeline-title">E-Commerce Project</h4>
+                                        </div>
+                                        <p class="timeline-description">Built a responsive shoe store with modern design principles</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-content">
+                                        <div class="timeline-header">
+                                            <span class="timeline-year">2024</span>
+                                            <h4 class="timeline-title">Cloud & DevOps</h4>
+                                        </div>
+                                        <p class="timeline-description">Expanded skills to AWS cloud services and containerization</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In <span class="text-gradient">Touch</span></h2>
+            
+            <div class="contact-content">
+                <div class="contact-form-wrapper">
+                    <div class="glass-card">
+                        <h3 class="card-title">Send Message</h3>
+                        <form class="contact-form" id="contactForm" name="contact" method="POST" data-netlify="true">
+                            <input type="hidden" name="form-name" value="contact">
+                            
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required placeholder="Your full name">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" required rows="5" placeholder="Tell me about your project or just say hello!"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn-primary full-width">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="contact-info">
+                    <div class="glass-card contact-card">
+                        <div class="contact-icon">📍</div>
+                        <h3 class="card-title">Location</h3>
+                        <p>India</p>
+                    </div>
+                    
+                    <div class="glass-card social-links">
+                        <h3 class="card-title">Connect With Me</h3>
+                        <div class="social-icons">
+                            <a href="https://github.com/victory-ajay-kumar" target="_blank" rel="noopener noreferrer" class="social-icon" data-tooltip="GitHub">
+                                <span>📱</span>
+                                <div class="glow-ring"></div>
+                            </a>
+                            <a href="https://linkedin.com/in/victory-ajay-kumar" target="_blank" rel="noopener noreferrer" class="social-icon" data-tooltip="LinkedIn">
+                                <span>💼</span>
+                                <div class="glow-ring"></div>
+                            </a>
+                            <a href="mailto:victory.ajaykumar@email.com" target="_blank" rel="noopener noreferrer" class="social-icon" data-tooltip="Email">
+                                <span>✉️</span>
+                                <div class="glow-ring"></div>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="glass-card cta-card">
+                        <h3 class="card-title">Ready to collaborate?</h3>
+                        <p>Let's discuss your next project and bring your ideas to life.</p>
+                        <button class="btn-primary" onclick="window.open('mailto:victory.ajaykumar@email.com', '_blank')">
+                            Start Conversation
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="nav-logo">
+                        <div class="logo-icon">VA</div>
+                        <span class="logo-text">Victory Ajay Kumar</span>
+                    </div>
+                </div>
+                
+                <div class="footer-social">
+                    <a href="https://github.com/victory-ajay-kumar" target="_blank" rel="noopener noreferrer" class="social-icon">
+                        <span>📱</span>
+                    </a>
+                    <a href="https://linkedin.com/in/victory-ajay-kumar" target="_blank" rel="noopener noreferrer" class="social-icon">
+                        <span>💼</span>
+                    </a>
+                    <a href="mailto:victory.ajaykumar@email.com" target="_blank" rel="noopener noreferrer" class="social-icon">
+                        <span>✉️</span>
+                    </a>
+                </div>
+                
+                <div class="footer-legal">
+                    <a href="#privacy">Privacy</a>
+                    <a href="#cookies">Cookies</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2025 Ajay Kumar – Built with ❤️ using HTML, CSS & JavaScript</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <div class="toast-content">
+            <div class="toast-title" id="toastTitle">Success!</div>
+            <div class="toast-message" id="toastMessage">Your message has been sent successfully!</div>
+        </div>
+        <button class="toast-close" onclick="hideToast()">×</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
